@@ -1,12 +1,11 @@
 import './App.css'
-import UserManagementHub from './page/dashboard';
-import UserDashboard from './page/sec';
+import UserManagementHub from './page/UserManagementHub';
+// import AboutPage from './page/AboutPage';
 function App () {
   return (
     <>
-      {/* <h1 className="font-bold  text-red-500 underline">hello world</h1> */}
+      
       <UserManagementHub />
-      {/* <UserDashboard /> */}
     
     </>
   )
