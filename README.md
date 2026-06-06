@@ -1,18 +1,32 @@
-# React + Vite
+# Core.OS - Enterprise User Management Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Core.OS is a dynamic, fully responsive senior-level single-page dashboard application built with **React** and styled using **Tailwind CSS UI Components**. It features a modern, aesthetic dark mode UI with vibrant Neon Violet and Emerald accents, providing an intuitive workflow for managing system users and monitoring real-time metrics.
 
-Currently, two official plugins are available:
+Developed by **Group 10**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- **Dynamic Navigation:** Seamlessly switch between the registration form and the database interactive directory table.
+- **Advanced Form Architecture:** Includes custom Tailwind text inputs, conditional selection dropdowns, active character verification textareas, and an animated custom toggle switch.
+- **State Persistence (LocalStorage):** Registered users and system configurations are locally cached so data is never lost upon browser reload.
+- **Live System Analytics:** Interactive stats dashboard utilizing conditional progress tracking and analytical capacity metrics.
+- **Dynamic UX Feedback alerts:** State-driven contextual pop-up alerts for execution validations (Success, Warning, Danger statuses).
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## 🛠️ Tailwind CSS Components Breakdown
 
-Note: This will impact Vite dev & build performances.
+This project utilizes advanced, custom-styled Tailwind utility classes to form structured components:
+- **Layout & Tabs:** Built using flexbox alignments (`flex items-center justify-between`) and absolute dynamic counters (`absolute -top-1 -right-1`).
+- **Interactive Forms:** Form fields styled with custom border focus indicators (`focus:ring-2 focus:ring-violet-500/50 focus:border-violet-500`).
+- **Data Table:** Structured using a strict administrative table matrix with custom truncate limits (`max-w-xs truncate`) and clean contextual dividing parameters (`divide-y divide-neutral-800`).
+- **Feedback & Badges:** UI notification bars and custom borders wrapped inside transparency layers (`bg-emerald-950/40 border-emerald-500/30`).
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+Ensure you have [Node.js](https://nodejs.org/) installed on your computer.
+
+### Installation & Run
+
+1. Clone the repository to your local system:
+   ```bash
+   git clone https://github.com/macaadaxmed5252-droid
