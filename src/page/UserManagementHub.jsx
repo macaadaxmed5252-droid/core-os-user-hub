@@ -4,7 +4,10 @@ import AboutPage from './AboutPage';
 export default function UserManagementHub() {
   // --- 1. STATE LAYER ---
   const [currentPage, setCurrentPage] = useState('about'); 
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    const savedTheme = localStorage.getItem('theme');
+    return savedTheme ? savedTheme === 'dark' : true;
+  });
 
   // Isku-xidhka HTML Root iyo Isbeddelka Midabada
   useEffect(() => {
@@ -12,9 +15,11 @@ export default function UserManagementHub() {
     if (isDarkMode) {
       root.classList.add('dark');
       root.style.backgroundColor = '#0a0a0a';
+      localStorage.setItem('theme', 'dark');
     } else {
       root.classList.remove('dark');
       root.style.backgroundColor = '#f8fafc';
+      localStorage.setItem('theme', 'light');
     }
   }, [isDarkMode]);
 
